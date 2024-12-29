@@ -2,53 +2,69 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una simulación simplificada inspirada en el clásico juego de estrategia **Risk**. Permite a los jugadores configurar ejércitos, planificar estrategias de ataque y conquistar territorios en un tablero virtual. El objetivo principal es optimizar los recursos disponibles para obtener la máxima puntuación posible conquistando territorios enemigos.
+El **Simulador Risk** es una adaptación simplificada del clásico juego de estrategia **Risk**. Este proyecto permite a los jugadores simular batallas, planificar estrategias y conquistar territorios en un tablero virtual. El objetivo principal es gestionar eficientemente los recursos disponibles para maximizar la puntuación mediante la conquista de territorios enemigos.
 
 ## Características Principales
 
-- **Tablero Visual**: Representación de territorios enemigos, celdas vacías y territorios conquistados en un tablero en la consola.
-- **Configuración Personalizada**: El jugador define el número de puntos disponibles para crear un ejército y el número de territorios en el tablero.
-- **Optimización de Estrategias**:
-  - Generación de combinaciones óptimas de ejércitos según los puntos disponibles.
-  - Generación de órdenes de ataque priorizando territorios más débiles.
-- **Interacción Intuitiva**: Menús claros y mensajes con colores para mejorar la experiencia de usuario.
+- **Tablero Visual Dinámico**:
+  - Representación clara de territorios enemigos, celdas vacías y territorios conquistados.
+  - Actualización en tiempo real tras cada movimiento.
+  
+- **Configuración Personalizable**:
+  - Define la cantidad de puntos iniciales para crear tu ejército.
+  - Establece el número de territorios en el tablero de juego.
+
+- **Estrategias Avanzadas**:
+  - Generación automática de combinaciones óptimas de ejércitos basadas en los puntos disponibles.
+  - Cálculo de órdenes de ataque priorizando los territorios más débiles.
+
+- **Interfaz Intuitiva**:
+  - Menús claros y fáciles de usar.
+  - Uso de colores para resaltar mensajes importantes y mejorar la experiencia del usuario.
 
 ## Requisitos Previos
 
-### Software Necesario:
+### Software Necesario
 
-- **Python 3.7 o superior**
-- **Módulos instalados**:
+- **Python**: Versión 3.7 o superior.
+- **Módulos Requeridos**:
   - `numpy`
   - `colorama`
 
-### Configuración Inicial:
+### Configuración Inicial
 
-1. **Introduce los puntos disponibles** para crear tu ejército (valor predeterminado: 20).
-2. **Especifica el número de territorios** a crear (valor predeterminado: 3).
+1. **Asigna los puntos disponibles**: Define el número de puntos para construir tu ejército (valor predeterminado: 20).
+2. **Configura el tablero**: Establece el número de territorios que se incluirán en el juego (valor predeterminado: 3).
 
-### Menú Principal:
+## Menú Principal
 
-Al iniciar, el juego mostrará un menú con las siguientes opciones:
+Al iniciar el programa, se muestra un menú con las siguientes opciones:
 
-1. **Ver todas las combinaciones posibles de ejército**:  
-   Muestra las 5 configuraciones de tropas más óptimas basadas en el poder de ataque.
+1. **Ver combinaciones óptimas de ejército**:  
+   Muestra las 5 configuraciones más efectivas de tropas basadas en su poder de ataque.
 
-2. **Ver todas las permutaciones de orden de ataque**:  
-   Muestra las 5 mejores secuencias de ataque priorizando territorios más débiles.
+2. **Explorar permutaciones de ataque**:  
+   Genera y muestra las 5 mejores secuencias de ataque, priorizando territorios con menor defensa.
 
-3. **Analizar mejor estrategia**:  
-   Calcula y muestra la mejor combinación de ejército y orden de ataque.
+3. **Analizar la mejor estrategia**:  
+   Combina automáticamente el mejor ejército y el mejor orden de ataque para maximizar las posibilidades de éxito.
 
 4. **Crear ejército manualmente**:  
-   Permite al jugador definir manualmente su ejército y atacar los territorios seleccionados.
+   Permite al jugador diseñar su ejército y seleccionar manualmente los territorios para atacar.
 
 5. **Salir**:  
-   Termina el programa.
+   Finaliza el programa.
 
-### Simulación de Ataques:
+## Simulación de Ataques
 
-1. **Selecciona el orden de ataque** de los territorios.
-2. El programa calculará el resultado de cada batalla basándose en el poder de ataque y la defensa de los territorios.
-3. Actualiza el tablero con los territorios conquistados y muestra la puntuación obtenida.
+La simulación de ataques sigue estos pasos:
 
+1. **Selecciona el orden de ataque**: Escoge la secuencia en la que deseas atacar los territorios enemigos.
+2. **Resolución de batallas**: El programa calcula los resultados de cada enfrentamiento basándose en las estadísticas de ataque y defensa.
+3. **Actualización del tablero**:
+   - Los territorios conquistados se actualizan visualmente en el tablero.
+   - Se muestra la puntuación obtenida tras cada ataque.
+
+---
+
+Este proyecto es ideal para aquellos interesados en los fundamentos de la estrategia militar y la optimización de recursos, todo mientras disfrutan de una experiencia interactiva y dinámica.
